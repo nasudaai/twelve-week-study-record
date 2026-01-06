@@ -4,10 +4,15 @@ const [key, value] = args;
 
 
 //Handling errors during input
-if (args.lengts !== 2) {
+if (args.length !== 2) {
   process.stdout.write("please arg two!\n");
   process.exit(1);
 }
+
+//process or conversion
+
+const obj = {key, value};
+console.log(obj);
 
 
 //out
