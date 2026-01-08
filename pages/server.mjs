@@ -7,12 +7,18 @@ import { readFileSync } from 'node:fs';
 
 //read html
 const html = readFileSync("./index.html", "utf-8");
+const js = readFileSync("./main.js", "utf-8");
 //check
 //console.log(html);
 
 //create server
 
 const server = createServer((req, res) => {
+  if (req.url === "/main.js") {
+    res.writeHead(200, { "content-type": "text/javascript; charset=utf-8"});
+    res.end(js);
+    return;
+  }
   res.end(html);
 });
 
