@@ -7,4 +7,15 @@ import { readFileSync } from 'node:fs';
 
 //read html
 const html = readFileSync("./index.html", "utf-8");
-console.log(html);
+//check
+//console.log(html);
+
+//create server
+
+const server = createServer((req, res) => {
+  res.end(html);
+});
+
+server.listen(3000, () => {
+  console.log("lisetn http://localhost:3000");
+});
