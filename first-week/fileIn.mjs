@@ -21,6 +21,9 @@ if (args.length === 2) {
 
 if (mode === "-w") {
   write("add:")
+  process.stdin.on("data", (chunk) => {
+    write(chunk);
+  });
 }
 
 const data = readFileSync(file, "utf-8");
