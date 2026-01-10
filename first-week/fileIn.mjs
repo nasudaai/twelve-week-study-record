@@ -1,7 +1,27 @@
 import { readFileSync } from 'node:fs';
 
 const args = process.argv.slice(2);
-const file = args[0];
+
+
+let mode;
+let file;
+
+if (args.length === 2) {
+  mode = args[0];
+  file = args[1];
+  console.log(args);
+} else if (args.length === 1) {
+  file = args[0];
+} else {
+  write("usage: <mode> <file> or <file>");
+  process.exit(1);
+}
+
+
+
+if (mode === "-w") {
+  write("add:")
+}
 
 const data = readFileSync(file, "utf-8");
 
