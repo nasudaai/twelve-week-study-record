@@ -5,5 +5,12 @@ const file = args[0];
 
 const data = readFileSync(file, "utf-8");
 
-process.stdout.write(file + "\n");
-process.stdout.write(data + "\n");
+//out process
+function write(data) {
+  process.stdout.write(data + "\n")
+}
+//process.stdout.write(file + "\n");
+//process.stdout.write(data + "\n");
+
+write(file);
+write(data);
