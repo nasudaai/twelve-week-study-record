@@ -1,14 +1,16 @@
+const args = process.argv.slice(2);
 
-function lineWrite(line) {
+function lineWrite(args) {
 
+  const line = args.join(" ");
   process.stdout.write(line + "\n");
 }
 
 
 function write(word) {
 
-  process.stdout.write("word" + " ");
+  process.stdout.write(word +  " ");
 }
 
-write("word");
-lineWrite("a b c");
+write(args[0]);
+lineWrite(args);
