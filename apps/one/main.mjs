@@ -10,3 +10,11 @@ function write(word) {
 
 write(word);
 write(line);
+
+if (args.length === 1) {
+  write(word);
+} else if (args.length >= 2) {
+  write(line);
+} else {
+  write("usage: <word> or <word>... ");
+}
