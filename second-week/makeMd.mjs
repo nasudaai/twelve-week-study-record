@@ -1,7 +1,8 @@
 import { writeFileSync } from 'node:fs';
-
 //console.log(writeFileSync);
 
-const title = "# title"
+const args = process.argv.slice(2);
 
-writeFileSync("out/text.md", title + "\n");
+const title = args[0];
+
+writeFileSync("out/" + title + ".md", title + "\n");
