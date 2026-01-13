@@ -9,6 +9,8 @@ if (args.length === 0) {
   process.exit(0);
 }
 
-const title = args[0];
 
-writeFileSync("out/" + title + ".md", title + "\n");
+const title = args[0];
+const fileName = args[0];
+
+writeFileSync("out/" + fileName + ".md", title + "\n");
