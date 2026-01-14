@@ -1,2 +1,0 @@
-goma burokkoriygoma burokkoriy
-aburaage
