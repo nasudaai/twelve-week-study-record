@@ -1,3 +1,4 @@
+// trial program
 const str = "string";
 
 const obj = {key: "value"};
