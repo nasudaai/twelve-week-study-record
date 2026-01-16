@@ -1,1 +1,1 @@
-process.stdout.write("test");
+process.stdout.write("test" + "\n");
