@@ -1,3 +1,5 @@
 #!/bin/bash
 
-echo "test"
+day=$(date +"%Y-%m-%d")
+
+echo "$day" >> "./record.txt"
