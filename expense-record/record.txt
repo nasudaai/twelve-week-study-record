@@ -1,0 +1,4 @@
+2026-0120
+912 convenience-store
+160 vending-machines
+3323 drugstore
