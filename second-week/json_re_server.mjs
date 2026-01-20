@@ -5,7 +5,7 @@ console.log(createServer);
 
 const server = createServer((req, res) => {
 
-  const obj = { url: req.url}
+  const obj = { url: req.url, method: req.method};
   res.writeHead(200, { "Content-Type": "application/json" });
   res.end(JSON.stringify(obj));
 });
