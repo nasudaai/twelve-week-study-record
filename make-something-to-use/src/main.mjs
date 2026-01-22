@@ -1,6 +1,6 @@
-function write() {
+function write(str) {
   
-  process.stdout.write("test\n");
+  process.stdout.write(str + "\n");
 };
 
 function main() {
@@ -8,7 +8,8 @@ function main() {
   const args = process.argv.slice(2);
   process.stdout.write(JSON.stringify(args));
 
-  write()
+  const str = "string";
+  write(str);
 };
 
 main();
