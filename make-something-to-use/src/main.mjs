@@ -6,7 +6,6 @@ function write() {
 function main() {
 
   write()
-  console.log("main");
 };
 
 main();
